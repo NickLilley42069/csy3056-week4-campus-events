@@ -30,4 +30,14 @@ EVENTS = [
         'category': 'Technical',
         'description': 'Discuss how small web systems can be deployed and operated.',
     },
+        {
+        'id': 'olu-plz-can-we-go-alton-towers',
+        'title': 'Alton Towers trip',
+        'date': '2026-11-19',
+        'time': '9:00',
+        'location': 'Alton Towers, The Smiler',
+        'capacity': 16,
+        'category': 'Trip',
+        'description': 'Class trip because i promised Olu cotton candy :)',
+    },
 ]
