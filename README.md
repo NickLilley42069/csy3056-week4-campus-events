@@ -11,7 +11,7 @@ Python 3.10 or later. The application uses only the Python standard library; no 
 From the project folder, run:
 
 ```text
-python app.py
+py app.py
 ```
 
 Open http://127.0.0.1:5000 in a browser. Use fictional names when testing bookings. Press Ctrl+C in the terminal to stop the server.
@@ -19,16 +19,16 @@ Open http://127.0.0.1:5000 in a browser. Use fictional names when testing bookin
 ## Check the application
 
 ```text
-python scripts/check_app.py
+py scripts/check_app.py
 ```
 
 ## Package a release
 
 ```text
-python scripts/build_release.py
+py scripts/build_release.py
 ```
 
-The generated release ZIP is saved in `dist/`. Extract the ZIP and run `python app.py` from its `campus-events` folder to launch that release independently.
+The generated release ZIP is saved in `dist/`. Extract the ZIP and run `py app.py` from its `campus-events` folder to launch that release independently.
 
 ## Local data
 
