@@ -12,15 +12,16 @@ pipeline {
             steps { bat 'py scripts/check_app.py' }
         }
         stage('Package Release') {
-            steps { bat 'py scripts/build_release.py' }
+            steps { bat 'py scripts/build_releases.py' }
         }
         stage('Archive Release') {
-            steps { archiveArtifacts artifacts: 'dist/*.zip', 
-                    fingerprint: true }
+            steps { archiveArtifacts artifacts: 'dist/*.zip', fingerprint: true }
         }
         stage('Build Metadata') {
-            steps { bat 'echo Build Number: 22 > build-info.txt'
-                        archiveArtifacts artifacts: 'dist/campus-event-1.1.0.zip, build-info.txt'}
+            steps {
+                bat 'echo Build Number: %BUILD_NUMBER% > build-info.txt'
+                archiveArtifacts artifacts: 'build-info.txt'
+            }
         }
     }
 }
