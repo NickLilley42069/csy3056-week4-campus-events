@@ -11,5 +11,8 @@ pipeline {
         stage('Validate Application') {
             steps { bat 'py scripts/check_app.py' }
         }
+        stage('Package Release') {
+            steps { bat 'py scripts/build_release.py' }
+        }
     }
 }

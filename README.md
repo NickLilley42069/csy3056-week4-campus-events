@@ -33,3 +33,6 @@ The generated release ZIP is saved in `dist/`. Extract the ZIP and run `py app.p
 ## Local data
 
 Bookings are stored in `instance/bookings.sqlite3`. The `instance/` directory is excluded from version control and release packages. This is a local classroom application, not a production booking service; do not enter real personal information or expose it publicly.
+
+
+##PASSWORD; LN,YR.
