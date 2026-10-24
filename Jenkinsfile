@@ -14,5 +14,9 @@ pipeline {
         stage('Package Release') {
             steps { bat 'py scripts/build_release.py' }
         }
+        stage('Archive Release') {
+            steps { archiveArtifacts artifacts: 'dist/*.zip', 
+                    fingerprint: true }
+        }
     }
 }
