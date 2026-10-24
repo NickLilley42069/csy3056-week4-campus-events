@@ -19,7 +19,7 @@ pipeline {
                     fingerprint: true }
         }
         stage('Build Metadata') {
-            steps { bat 'echo Build Number: %BUILD_NUMBER% > build-info.txt'
+            steps { bat 'echo Build Number: 22 > build-info.txt'
                         archiveArtifacts artifacts: 'dist/campus-event-1.1.0.zip, build-info.txt'}
         }
     }
