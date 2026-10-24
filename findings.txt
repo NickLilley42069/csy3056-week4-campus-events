@@ -1,0 +1,6 @@
+I did not know where I was meant to put this so I made a new .txt file,
+
+From what i can now see, the zip folder that I took from jenkins is essentially the customer facing website where as
+what I had been working on would have been a staff/administrative role.
+
+Everything except the jenkins files, the dist folder and the scripts are present in the stuff I extracted.
